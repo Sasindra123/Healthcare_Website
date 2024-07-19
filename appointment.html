@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Book an Appointment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+      form {
+        margin-top: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .appointment-timings {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .card {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+      .appointment-timings div {
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 10px;
+      }
+      .appointment-timings div:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book an Appointment</h1>
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLScilfkHgy79bboXGveC-ZUExbawQQc-lvxPk8hbQlGrRqKPeQ/formResponse?"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="entry.2116052852" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="entry.1558582620" required />
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="entry.1060472253" required />
+
+        <label for="time">Preferred Time:</label>
+        <input type="text" id="time" name="entry.288713975" required />
+
+        <div class="appointment-timings">
+          <div class="card">
+            <h3>Morning Session</h3>
+            <div onclick="setTime('12:00 AM')">12:00 AM</div>
+            <div onclick="setTime('12:30 AM')">12:30 AM</div>
+            <div onclick="setTime('1:00 AM')">1:00 AM</div>
+            <div onclick="setTime('1:30 AM')">1:30 AM</div>
+            <div onclick="setTime('2:00 AM')">2:00 AM</div>
+            <div onclick="setTime('2:30 AM')">2:30 AM</div>
+            <div onclick="setTime('3:00 AM')">3:00 AM</div>
+            <div onclick="setTime('3:30 AM')">3:30 AM</div>
+            <div onclick="setTime('4:00 AM')">4:00 AM</div>
+            <div onclick="setTime('4:30 AM')">4:30 AM</div>
+            <div onclick="setTime('5:00 AM')">5:00 AM</div>
+            <div onclick="setTime('5:30 AM')">5:30 AM</div>
+            <div onclick="setTime('6:00 AM')">6:00 AM</div>
+            <div onclick="setTime('6:30 AM')">6:30 AM</div>
+            <div onclick="setTime('7:00 AM')">7:00 AM</div>
+            <div onclick="setTime('7:30 AM')">7:30 AM</div>
+            <div onclick="setTime('8:00 AM')">8:00 AM</div>
+            <div onclick="setTime('8:30 AM')">8:30 AM</div>
+            <div onclick="setTime('9:00 AM')">9:00 AM</div>
+            <div onclick="setTime('9:30 AM')">9:30 AM</div>
+            <div onclick="setTime('10:00 AM')">10:00 AM</div>
+            <div onclick="setTime('10:30 AM')">10:30 AM</div>
+            <div onclick="setTime('11:00 AM')">11:00 AM</div>
+            <div onclick="setTime('11:30 AM')">11:30 AM</div>
+          </div>
+          <div class="card">
+            <h3>Evening Session</h3>
+            <div onclick="setTime('12:00 PM')">12:00 PM</div>
+            <div onclick="setTime('12:30 PM')">12:30 PM</div>
+            <div onclick="setTime('1:00 PM')">1:00 PM</div>
+            <div onclick="setTime('1:30 PM')">1:30 PM</div>
+            <div onclick="setTime('2:00 PM')">2:00 PM</div>
+            <div onclick="setTime('2:30 PM')">2:30 PM</div>
+            <div onclick="setTime('3:00 PM')">3:00 PM</div>
+            <div onclick="setTime('3:30 PM')">3:30 PM</div>
+            <div onclick="setTime('4:00 PM')">4:00 PM</div>
+            <div onclick="setTime('4:30 PM')">4:30 PM</div>
+            <div onclick="setTime('5:00 PM')">5:00 PM</div>
+            <div onclick="setTime('5:30 PM')">5:30 PM</div>
+            <div onclick="setTime('6:00 PM')">6:00 PM</div>
+            <div onclick="setTime('6:30 PM')">6:30 PM</div>
+            <div onclick="setTime('7:00 PM')">7:00 PM</div>
+            <div onclick="setTime('7:30 PM')">7:30 PM</div>
+            <div onclick="setTime('8:00 PM')">8:00 PM</div>
+            <div onclick="setTime('8:30 PM')">8:30 PM</div>
+            <div onclick="setTime('9:00 PM')">9:00 PM</div>
+            <div onclick="setTime('9:30 PM')">9:30 PM</div>
+            <div onclick="setTime('10:00 PM')">10:00 PM</div>
+            <div onclick="setTime('10:30 PM')">10:30 PM</div>
+            <div onclick="setTime('11:00 PM')">11:00 PM</div>
+            <div onclick="setTime('11:30 PM')">11:30 PM</div>
+          </div>
+        </div>
+
+        <input type="submit" />
+      </form>
+    </div>
+
+    <script>
+      function setTime(time) {
+        document.getElementById("time").value = time;
+      }
+    </script>
+  </body>
+</html>

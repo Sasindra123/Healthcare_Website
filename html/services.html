@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Test Prices</title>
+    <style>
+      h1 {
+        font-size: 60px;
+      }
+      body {
+        background-color: #1d2a4d;
+        margin: 0;
+        padding: 0;
+        font-family: "Alegreya", sans-serif;
+      }
+      .container {
+        color: #1d2a4d;
+        background-color: #fff;
+        padding: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      .container .header h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .container .testlinks ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Add space between links */
+        margin-bottom: 20px; /* Add space between rows */
+      }
+      .container .testlinks ul li {
+        margin-right: 10px;
+        margin-bottom: 30px;
+      }
+      .container .testlinks ul li a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #25477d;
+        padding: 8px 12px;
+
+        transition: background-color 0.3s;
+      }
+      .container .testlinks ul li a:hover {
+        background-color: #2976da;
+      }
+      .container .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 80px; /* Add space between containers */
+      }
+      .container .card {
+        flex: 0 1 calc(25% - 20px); /* Display cards in medium size */
+        background-color: #122e7b; /* Different color for cards */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content vertically */
+      }
+      .container .card img {
+        width: 150px; /* Adjust image size */
+        height: 150px; /* Adjust image size */
+        margin-bottom: 10px;
+        border-radius: 50%; /* Make image round */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow to image */
+      }
+
+      .container .test-name {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #f5f5f5;
+        margin-bottom: 10px;
+      }
+
+      #services {
+        cursor: pointer;
+        margin: 0;
+        padding: 0 20px;
+        background-color: #eaf2f6;
+      }
+
+      .serv-button {
+        margin-left: 43%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .back-button {
+        text-decoration: none;
+        top: 20px;
+        left: 20px;
+        font-size: 18px;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f25728;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        color: white;
+        cursor: pointer;
+      }
+
+      .back-button:hover {
+        background-color: #0056b3;
+      }
+
+      .back-button svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+      .container .card img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s; /* Add transition for smooth effect */
+      }
+
+      .container .card img:hover {
+        transform: scale(1.1); /* Zoom in by 10% */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="truelab.html" class="back-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M48 256c0 114.87 93.13 208 208 208s208-93.13 208-208S370.87 48 256 48S48 141.13 48 256Zm224-80.09L208.42 240H358v32H208.42L272 336.09l-22.7 22.54L147.46 256L249.3 153.37Z"
+            />
+          </svg>
+          Back to home
+        </a>
+        <h1>All tests</h1>
+        <nav class="testlinks">
+          <ul>
+            <li><a href="#">All Tests</a></li>
+            <li><a href="test1.html">PANCREAS</a></li>
+            <li><a href="test2.html">HEART</a></li>
+            <li><a href="test3.html">THYROID</a></li>
+            <li><a href="test4.html">KIDNEY</a></li>
+            <li><a href="test5.html">LUNGS</a></li>
+            <li><a href="test6.html">ANEMIA</a></li>
+            <li><a href="test7.html">LIVER</a></li>
+            <li><a href="test8.html">CANCER</a></li>
+            <li><a href="test9.html">INFECTIONS</a></li>
+            <li><a href="test10.html">ALLERGY</a></li>
+            <li><a href="test11.html">BONE & JOINTS</a></li>
+            <li><a href="test12.html">PATHOLOGY</a></li>
+            <li><a href="test13.html">AUTO IMMUNO DISEASE</a></li>
+            <li><a href="test14.html">MICROBIOLOGY</a></li>
+            <li><a href="test15.html">REPRODUCTIVE SYSTEM</a></li>
+            <li><a href="test16.html">GASTROINTESTINAL</a></li>
+            <li>
+              <a href="test14.html"
+                >MOLECULAR BIOLOGY(DBA & RNA DETECTION BY RT PCR)</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="container test-cards">
+          <div class="card" id="pancreas-card">
+            <img src="images/pancreas.jpg" alt="Test Image" />
+            <div class="test-name">Pancreas</div>
+          </div>
+          <div class="card" id="heart-card">
+            <img src="images/Heart.jpg" alt="Test Image" />
+            <div class="test-name">Heart</div>
+          </div>
+          <div class="card" id="thyroid-card">
+            <img src="images/thyroidgland.jpg" alt="Test Image" />
+            <div class="test-name">Thyroid</div>
+          </div>
+          <div class="card" id="kidney-card">
+            <img src="images/Kidny.jpg" alt="Test Image" />
+            <div class="test-name">Kidney</div>
+          </div>
+          <div class="card" id="lungs-card">
+            <img src="images/Lungs.jpeg" alt="Test Image" />
+            <div class="test-name">Lungs</div>
+          </div>
+          <div class="card" id="anemia-card">
+            <img src="images/Anemia.jpg" alt="Test Image" />
+            <div class="test-name">Anemia</div>
+          </div>
+          <div class="card" id="liver-card">
+            <img src="images/Liver.jpg" alt="Test Image" />
+            <div class="test-name">Liver</div>
+          </div>
+          <div class="card" id="cancer-card">
+            <img src="images/CancerCell.png" alt="Test Image" />
+            <div class="test-name">Cancer</div>
+          </div>
+          <div class="card" id="infections-card">
+            <img src="images/infection.jpg" alt="Test Image" />
+            <div class="test-name">Infections</div>
+          </div>
+          <div class="card" id="allergy-card">
+            <img src="images/Allergy.jpg" alt="Test Image" />
+            <div class="test-name">Allergy</div>
+          </div>
+          <div class="card" id="bonejoints-card">
+            <img src="images/BoneJoint.jpg" alt="Test Image" />
+            <div class="test-name">Bone & Joints</div>
+          </div>
+          <div class="card" id="pathology-card">
+            <img src="images/pathology.jpg" alt="Test Image" />
+            <div class="test-name">Pathology</div>
+          </div>
+          <div class="card" id="autoimmune-card">
+            <img src="images/autoimmunedisease.jpg" alt="Test Image" />
+            <div class="test-name">Auto Immuno Disease</div>
+          </div>
+          <div class="card" id="microbiology-card">
+            <img src="images/microbiology.jpg" alt="Test Image" />
+            <div class="test-name">Microbiology</div>
+          </div>
+          <div class="card" id="reproduction-card">
+            <img src="images/reproduction.avif" alt="Test Image" />
+            <div class="test-name">Reproductive system</div>
+          </div>
+          <div class="card" id="gastro-card">
+            <img src="images/gastrointestinal.jpg" alt="Test Image" />
+            <div class="test-name">Gastrointestinal</div>
+          </div>
+          <div class="card" id="molecular-card">
+            <img src="images/molecular.jpg" alt="Test Image" />
+            <div class="test-name">
+              Molecular Biology (DBA & RNA DETECTION by RT PCR)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("pancreas-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test1.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("heart-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test2.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("thyroid-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test3.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("kidney-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test4.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("lungs-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test5.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("anemia-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test6.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("liver-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test7.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("cancer-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test8.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("infections-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test9.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("allergy-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test10.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("bonejoints-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test11.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("pathology-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test12.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("autoimmune-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test13.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("microbiology-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test14.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("reproduction-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test15.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("gastro-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test16.html?id=" + testid;
+          window.location.href = url;
+        });
+      document
+        .getElementById("molecular-card")
+        .addEventListener("click", function () {
+          var testid = this.id;
+          var url = "test17.html?id=" + testid;
+          window.location.href = url;
+        });
+    </script>
+  </body>
+</html>

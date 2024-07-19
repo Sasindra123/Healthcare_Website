@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feedback Form</title>
+    <style>
+      body {
+        font-family: "Rubik", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        padding: 30px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      form {
+        text-align: left;
+        width: 100%;
+      }
+
+      label {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      textarea {
+        height: 80px;
+      }
+
+      input[type="submit"] {
+        font-family: "Rubik";
+        margin-left: 39%;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        /* margin-right: 10px; */
+        padding: 10px;
+      }
+
+      .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1>Feedback Form</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          viewBox="0 0 42 42"
+          class="icon"
+        >
+          <path
+            fill="currentColor"
+            d="M6.5 25.5v4c.016 2.812 1.344 2.375 2.328 1.531L14.5 25.91v2.59c0 2.43.56 3 3 3h9s5.209 6.125 5.25 6.084c.75.916 2.781.604 2.75-1.084v-5h3c2.45 0 3-.609 3-3v-15c0-2.4-.59-3-3-3h-10v-2c0-2.47-.46-3-3-3h-21c-2.36 0-3 .51-3 3v13c0 2.439.55 4 3 4h3zm25 3v4.721l-4-4.721h-9c-.75 0-1-.27-1-1v-13c0-.67.31-1 1-1h18c.689 0 1 .37 1 .94V27.5c0 .721-.359 1-1 1h-5z"
+          />
+        </svg>
+      </div>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea><br />
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions" required></textarea><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

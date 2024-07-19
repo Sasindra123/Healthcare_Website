@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Package Gallery</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0 20px; /* Adjusted padding for smaller screens */
+        font-family: "Rubik", sans-serif; /* Use Rubik font */
+        background-color: #f4f4f9;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px; /* Add gap between cards */
+      }
+
+      .card {
+        width: calc(100% - 40px); /* Full width for small screens */
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        background-color: #ffffff;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .slogan {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 40px;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #007bff;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Red Rose", sans-serif;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 3em;
+        padding: 20px 40px;
+        border-radius: 40px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Media query for larger screens */
+      @media (min-width: 600px) {
+        .card {
+          width: calc(50% - 40px); /* Two cards per row */
+        }
+      }
+
+      @media (min-width: 900px) {
+        .card {
+          width: calc(33.33% - 40px); /* Three cards per row */
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .card {
+          width: calc(25% - 40px); /* Four cards per row */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Our Packages</h1>
+    <p class="slogan">
+      "Experience better healthcare with our precise lab testing, supporting
+      professionals with reliable services and revolutionizing diagnostics with
+      innovation and integrity."
+    </p>
+    <div class="container">
+      <div class="card">
+        <img src="images/pack1.jpg" alt="Package 1" />
+      </div>
+      <div class="card">
+        <img src="images/pack2.jpg" alt="Package 2" />
+      </div>
+      <div class="card">
+        <img src="images/pack3.jpg" alt="Package 3" />
+      </div>
+      <div class="card">
+        <img src="images/pack4.jpg" alt="Package 4" />
+      </div>
+      <div class="card">
+        <img src="images/pack5.jpg" alt="Package 5" />
+      </div>
+      <div class="card">
+        <img src="images/pack6.jpg" alt="Package 6" />
+      </div>
+      <div class="card">
+        <img src="images/pack7.jpg" alt="Package 7" />
+      </div>
+      <div class="card">
+        <img src="images/pack8.jpg" alt="Package 8" />
+      </div>
+      <div class="card">
+        <img src="images/pack9.jpg" alt="Package 9" />
+      </div>
+      <div class="card">
+        <img src="images/pack10.jpg" alt="Package 10" />
+      </div>
+    </div>
+  </body>
+</html>
